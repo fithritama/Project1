@@ -1,0 +1,2 @@
+read Variable3
+TZ=$Variable3 date
