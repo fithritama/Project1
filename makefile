@@ -6,4 +6,7 @@ install:
 	grep -q "`cat main.services`" /etc/services || cat main.services >> /etc/services
 	install main.xinetd /etc/xinetd.d/main
 	/etc/init.d/xinetd restart
+	
+main.pot: 
+	xgettext -o main.pot -a -L Shell main
 
