@@ -3,7 +3,7 @@
 HOST=localhost
 PORT=4321
 
-lang=$(zenity --entry --entry-text="Enter 1 for Indonesian ; 2 for English" --text="Enter preffered language")
+lang=$(zenity --entry --entry-text="1 for Indonesian ; 2 for English" --text="Enter preffered language")
 if [ $lang -eq 1 ]
 then
 {
