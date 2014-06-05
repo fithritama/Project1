@@ -3,9 +3,9 @@
 HOST=localhost
 PORT=4321
 
-Variable1= $(zenity --entry --entry-text "Type" --text "Enter Continent")
-Variable2= $(zenity --entry --entry-text "Type" --text "Enter Region")
-Variable3= "$Variable1/$Variable2"
+Variable1=$(zenity --entry --entry-text "Type" --text "Enter Continent")
+Variable2=$(zenity --entry --entry-text "Type" --text "Enter Region")
+Variable3="$Variable1/$Variable2"
 echo $Variable3|nc $HOST $PORT
 export TZ="$Variable1"/"$Variable2"
 Display=$(date)
