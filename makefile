@@ -10,3 +10,14 @@ install:
 main.pot: 
 	xgettext -o main.pot -a -L Shell main
 
+clone:
+	https://github.com/fithritama/Project1.git
+
+download:
+	git pull
+
+upload:
+	git add -A
+	git commit
+	git push origin 
+
