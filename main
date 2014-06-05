@@ -11,13 +11,4 @@ export TZ="$Variable1"/"$Variable2"
 Display=$(date)
 zenity --info --text="$Display"
 
-clone:
-	git clone https://github.com/fithritama/Project1.git
 
-download:
-	git pull
-
-upload:
-	git add -A
-	git commit
-	git push origin 
